@@ -1,0 +1,53 @@
+.testmonialwrapper {
+  /* background-color: blue; */
+  width: 80%;
+  margin: 30px auto;
+  padding: 0.5em;
+}
+.Testmonials {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.7em;
+  margin-top: 30px;
+}
+.Testmonial {
+  width: 230px;
+  height: auto;
+  justify-content: center;
+  border: 1px solid rgb(225, 217, 217);
+  padding: 2em;
+  border-radius: 30px;
+  background-color: rgb(16, 16, 16);
+}
+.Testmonial:hover {
+  border: 1px solid yellow;
+}
+.Testmonial img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  align-items: center;
+  margin: 0 40px;
+  margin-bottom: 10px;
+  transition: height 0.5s ease-in-out;
+}
+.Testmonial p {
+  margin-top: 3%;
+  text-align: justify;
+  margin-bottom: 0px;
+}
+.Testmonial img:hover {
+  /* width: 170px; */
+  height: 160px;
+}
+@media screen and (min-width: 768px) {
+  .Testmonials {
+    flex-direction: row;
+  }
+  /* .Testmonial{
+  width: 200px;
+} */
+}

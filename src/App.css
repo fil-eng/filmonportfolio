@@ -1,0 +1,58 @@
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow: hidden; */
+  color: white;
+  max-width: 100%;
+}
+/*variable*/
+:root {
+  --primary-color: orange;
+  --secondary-color: rgb(11, 11, 11);
+}
+body {
+  background-color: black;
+  /* padding: 20px; */
+}
+img {
+  max-width: 100%;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  color: var(--primary-color);
+}
+li {
+  list-style: none;
+}
+/*font*/
+/*mobile-first*/
+h1,
+h2,
+h3,
+h4 {
+  font-size: 1.4em;
+  text-align: center;
+}
+
+p {
+  color: #8d9cb2;
+  text-align: justify;
+  /* font-size: 1.2em; */
+  margin: 30px 0;
+}
+/* Styles for screens 600px wide and up (e.g., tablets in portrait) */
+@media (min-width: 620px) {
+  body {
+    font-size: 14px;
+  }
+}
+@media (min-width: 920px) {
+  body {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1220px) {
+}

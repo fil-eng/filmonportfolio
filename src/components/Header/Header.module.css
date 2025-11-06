@@ -1,0 +1,90 @@
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(64, 67, 67);
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  /* justify-content: center; */
+}
+.headerwrapper {
+  width: 80%;
+  display: flex;
+  margin: 0 auto;
+  /* background-color: rgb(64, 67, 67); */
+  justify-content: space-between;
+  padding: 10px 0;
+  /* overflow: hidden; */
+}
+.disknav {
+  display: none;
+}
+
+.logo {
+  background-image: url("../../assets/Logo.jpg");
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* aspect-ratio: 1; */
+  /* overflow: hidden; */
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* margin-top: 10px; */
+}
+
+.mobilenavwraper {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: rgb(39, 38, 38);
+  padding: 20px;
+  align-items: center;
+}
+.mobilenav ul {
+  margin-top: 120px;
+  justify-content: center;
+}
+.mobilenav ul li {
+  margin-top: 0.7em;
+  font-size: x-large;
+}
+.icon,
+.faTimes {
+  font-size: 25px;
+  margin-top: 10px;
+  justify-content: center;
+  right: 0;
+}
+.icon:hover{
+  cursor: pointer;
+}
+
+@media screen and (min-width: 620px) {
+  .disknav {
+    display: block;
+    padding: 10px;
+
+  }
+  .disknav ul {
+    display: flex;
+    /* background-color: aliceblue; */
+    gap: 0.7em;
+  }
+  .disknav ul li {
+    color: black !important;
+  }
+  .mobilenavwraper,
+  .Hamburger {
+    display: none;
+  }
+}

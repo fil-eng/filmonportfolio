@@ -1,0 +1,47 @@
+.formWraper {
+  width: 80%;
+  /* background-color: red; */
+  margin: 20px auto;
+  padding: 20px;
+  color: black;
+}
+.formWraper form {
+  width: 80%;
+  margin: 20px auto;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9em;
+  color: black;
+  /* border: 0.5px rgb(69, 67, 67) solid; */
+}
+.formWraper form input {
+  padding: 10px;
+  background-color: rgb(42, 41, 41);
+  border: none;
+}
+.formWraper form button {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 20px;
+  color: orangered;
+  padding: 5px;
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+}
+.formWraper form textarea {
+  background-color: rgb(42, 41, 41);
+  border: none;
+  padding: 10px;
+}
+form .status {
+  margin: 0;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .formWraper form {
+    width: 50%;
+  }
+}

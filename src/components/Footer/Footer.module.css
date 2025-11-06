@@ -1,0 +1,39 @@
+.FooterSection {
+  width: 100%;
+  background-color: rgb(29, 32, 32);
+  margin-top: 1em;
+  text-align: center;
+  justify-content: center;
+}
+.FooterContent {
+  display: flex;
+  flex-direction: column;
+  /* gap: 2em; */
+  padding-bottom: 10px;
+}
+.FooterContent p {
+  text-align: center;
+  font-size: medium;
+}
+.socialmediaLinks {
+  display: flex;
+  font-size: large;
+  gap: 0.7em;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.linkItem {
+  border-radius: 50%;
+  font-size: 30px;
+}
+.linkItem:hover {
+  font-size: 40px;
+}
+@media (min-width: 768px) {
+  .FooterContent {
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+  }
+}
