@@ -1,6 +1,7 @@
 import fristProject from "../../assets/hotel.png";
 import secondProject from "../../assets/vote.png";
 import thirdProject from "../../assets/portfolio.png";
+import netflixProject from "../../assets/netflix.png"
 import { Link } from "react-router-dom";
 import Styles from "./Projects.module.css";
 import { useState } from "react";
@@ -25,6 +26,13 @@ export const projects = [
     name: "Portfolio",
     stack: ["React", "CSS3"],
     disc: "This project is a professional hotel website built for Debre Damo International Hotel. The platform provides guests with easy access to information about rooms, services, and amenities, as well as seamless contact options for booking and inquiries. The goal was to create a modern, responsive, and user-friendly experience that reflects the hotel’s brand and makes it accessible to both local and international visitors.",
+  },
+   {
+    img: netflixProject,
+    url: "https://hailekiros.netlify.app",
+    name: "Portfolio",
+    stack: ["React", "CSS3"],
+    disc: "Netflix Clone – React & CSS3: A fully responsive Netflix-style web application built with React and modern CSS3, featuring dynamic movie fetching through API integration. It includes smooth UI/UX interactions, hover effects, and clean reusable components. The layout is optimized for all devices, using a mobile-first approach. This project highlights strong front-end skills in React, routing, state management, and UI design.",
   },
 ];
 
