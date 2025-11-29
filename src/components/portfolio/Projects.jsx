@@ -70,7 +70,7 @@ function Projects() {
                 {expanded[i] ? "View less" : "View more"}
               </p>
               <div className={Styles.buttons}>
-                <Link to={project.url}>
+                <Link to={project.url} target="_blank">
                   <button>Live Demo</button>
                 </Link>
                 <Link>
