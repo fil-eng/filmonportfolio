@@ -30,7 +30,7 @@ export const projects = [
    {
     img: netflixProject,
     url: "https://hailekiros.netlify.app",
-    name: "Portfolio",
+    name: "Netflix",
     stack: ["React", "CSS3"],
     disc: "Netflix Clone – React & CSS3: A fully responsive Netflix-style web application built with React and modern CSS3, featuring dynamic movie fetching through API integration. It includes smooth UI/UX interactions, hover effects, and clean reusable components. The layout is optimized for all devices, using a mobile-first approach. This project highlights strong front-end skills in React, routing, state management, and UI design.",
   },
