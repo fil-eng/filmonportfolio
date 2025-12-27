@@ -6,13 +6,13 @@ import { Link } from "react-router-dom";
 import Styles from "./Projects.module.css";
 import { useState } from "react";
 export const projects = [
-  {
-    img: fristProject,
-    url: "https://debredamointernationalhotel.com",
-    name: "Debre Damo Hotel",
-    stack: ["React", "node.js", "CSS3"],
-    disc: "This project is a professional hotel website built for Debre Damo International Hotel. The platform provides guests with easy access to information about rooms, services, and amenities, as well as seamless contact options for booking and inquiries. The goal was to create a modern, responsive, and user-friendly experience that reflects the hotel’s brand and makes it accessible to both local and international visitors.",
-  },
+  // {
+  //   img: fristProject,
+  //   url: "https://debredamointernationalhotel.com",
+  //   name: "Debre Damo Hotel",
+  //   stack: ["React", "node.js", "CSS3"],
+  //   disc: "This project is a professional hotel website built for Debre Damo International Hotel. The platform provides guests with easy access to information about rooms, services, and amenities, as well as seamless contact options for booking and inquiries. The goal was to create a modern, responsive, and user-friendly experience that reflects the hotel’s brand and makes it accessible to both local and international visitors.",
+  // },
   {
     name: "Deamat voting website",
     url: "https://filmonportfolio.netlify.app",
