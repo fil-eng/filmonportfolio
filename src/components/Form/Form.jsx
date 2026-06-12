@@ -52,7 +52,7 @@ const Form = () => {
         {status && <p className={Styles.status}>{status}</p>}
         {/* <p className={Styles.status}>succesfull message</p> */}
         <button type="submit" className="">
-          {isLoading ? "Lodading" : "Send Message"}
+          {isLoading ? "Lodading..." : "Send Message"}
         </button>
       </form>
     </div>
