@@ -1,7 +1,9 @@
 import fristProject from "../../assets/hotel.png";
 import secondProject from "../../assets/vote.png";
-import thirdProject from "../../assets/portfolio.png";
-import netflixProject from "../../assets/netflix.png"
+// import thirdProject from "../../assets/portfolio.png";
+import thirdProject from "../../assets/amazonclone.png";
+
+import netflixProject from "../../assets/netflix.png";
 import { Link } from "react-router-dom";
 import Styles from "./Projects.module.css";
 import { useState } from "react";
@@ -13,26 +15,34 @@ export const projects = [
   //   stack: ["React", "node.js", "CSS3"],
   //   disc: "This project is a professional hotel website built for Debre Damo International Hotel. The platform provides guests with easy access to information about rooms, services, and amenities, as well as seamless contact options for booking and inquiries. The goal was to create a modern, responsive, and user-friendly experience that reflects the hotel’s brand and makes it accessible to both local and international visitors.",
   // },
+
+  {
+    img: fristProject,
+    url: "https://debredamointernationalhotel.com",
+    name: "Debre Damo",
+    stack: ["React", "CSS3"],
+    disc: "This project is a professional hotel website built for Debre Damo International Hotel. The platform provides guests with easy access to information about rooms, services, and amenities, as well as seamless contact options for booking and inquiries. The goal was to create a modern, responsive, and user-friendly experience that reflects the hotel’s brand and makes it accessible to both local and international visitors.",
+  },
+  {
+    img: netflixProject,
+    url: "https://hailekiros.netlify.app",
+    name: "Netflix",
+    stack: ["React", "CSS3"],
+    disc: "Netflix Clone – React & CSS3:",
+  },
+    {
+    name: "Amazon clone",
+    url: "https://amazoncfilaclone.netlify.app",
+    img: thirdProject,
+    stack: ["React", "node.js", "CSS3","firebase","stripe"],
+    disc: "I built a fully functional Amazon clone web application that replicates the core shopping experience, including product browsing, cart management, payment gateway, and a clean, responsive UI. This project demonstrates my full-stack skills, attention to user experience, and ability to recreate a large-scale e-commerce interface from scratch.",
+  },
   {
     name: "Deamat voting website",
     url: "https://filmonportfolio.netlify.app",
     img: secondProject,
     stack: ["React", "node.js", "CSS3"],
     disc: "This project is a professional hotel website built for Debre Damo International Hotel. The platform provides guests with easy access to information about rooms, services, and amenities, as well as seamless contact options for booking and inquiries. The goal was to create a modern, responsive, and user-friendly experience that reflects the hotel’s brand and makes it accessible to both local and international visitors.",
-  },
-  {
-    img: thirdProject,
-    url: "https://filmonportfolio.netlify.app",
-    name: "Portfolio",
-    stack: ["React", "CSS3"],
-    disc: "This project is a professional hotel website built for Debre Damo International Hotel. The platform provides guests with easy access to information about rooms, services, and amenities, as well as seamless contact options for booking and inquiries. The goal was to create a modern, responsive, and user-friendly experience that reflects the hotel’s brand and makes it accessible to both local and international visitors.",
-  },
-   {
-    img: netflixProject,
-    url: "https://hailekiros.netlify.app",
-    name: "Netflix",
-    stack: ["React", "CSS3"],
-    disc: "Netflix Clone – React & CSS3:",
   },
 ];
 

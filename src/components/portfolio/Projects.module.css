@@ -33,6 +33,7 @@
   align-items: stretch;
   border: 1px solid rgba(207, 204, 225, 0.852);
   align-self: start; /* prevent this card from stretching to match siblings */
+  height: 380px;
 }
 .project:hover {
   border: 2px solid orangered;
