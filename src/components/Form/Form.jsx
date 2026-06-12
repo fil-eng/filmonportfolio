@@ -7,12 +7,14 @@ const Form = () => {
   const SERVICE_ID = import.meta.env.VITE_SERVICE_ID;
   const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
   const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
-
+  const [isLoading, setIsloading] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setIsloading(true);
     emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY).then(
       () => {
+        setIsloading(false);
+
         setStatus("✅ Message sent successfully!");
         form.current.reset();
         setTimeout(() => {
@@ -20,17 +22,18 @@ const Form = () => {
         }, 3000);
       },
       (error) => {
+        setIsloading(false);
         setStatus("❌ Failed to send message. Try again later.");
         // console.error(error);
-         setTimeout(() => {
+        setTimeout(() => {
           setStatus(" ");
         }, 3000);
-      }
+      },
     );
   };
 
   return (
-    <div className={Styles.formWraper} id='contact'>
+    <div className={Styles.formWraper} id="contact">
       <h2 className={Styles.fom}>Contact Me</h2>
       <form ref={form} onSubmit={sendEmail}>
         <input type="text" name="user_name" placeholder="Your Name" required />
@@ -49,7 +52,7 @@ const Form = () => {
         {status && <p className={Styles.status}>{status}</p>}
         {/* <p className={Styles.status}>succesfull message</p> */}
         <button type="submit" className="">
-          Send Message
+          {isLoading ? "Lodading" : "Send Message"}
         </button>
       </form>
     </div>
