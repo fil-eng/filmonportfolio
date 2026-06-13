@@ -11,9 +11,12 @@ function Header() {
   return (
     <div className={styles.header}>
       <div className={styles.headerwrapper}>
-        <div className={styles.logo}>
-          {/* <Link href={''}><img src={logo} alt={'logo'} /></Link> */}
-        </div>
+        <NavHashLink to="/#home" smooth>
+          <div className={styles.logo}>
+            {/* <Link href={''}><img src={logo} alt={'logo'} /></Link> */}
+          </div>
+        </NavHashLink>
+
         <nav className={styles.disknav}>
           <ul>
             <li>
